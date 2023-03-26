@@ -32,8 +32,8 @@ const PageContainer = styled.div<{ isDarkMode: boolean }>`
 
   background: ${({ isDarkMode }) =>
     isDarkMode
-      ? 'linear-gradient(rgba(8, 10, 24, 0) 0%, rgb(8 10 24 / 100%) 45%)'
-      : 'linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255 255 255 /100%) 45%)'};
+      ? 'linear-gradient(rgba(8, 10, 24, 0) 0%, rgb(0 75 173 / 100%) 45%)'
+      : 'linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(0 75 173 /100%) 45%)'};
 `
 
 const Gradient = styled.div<{ isDarkMode: boolean }>`
