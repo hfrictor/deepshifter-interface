@@ -76,7 +76,7 @@ const Glow = styled.div`
   position: absolute;
   top: 68px;
   bottom: 0;
-  background: radial-gradient(72.04% 72.04% at 50% 3.99%, #ff37eb 0%, rgba(166, 151, 255, 0) 100%);
+  background: radial-gradient(72.04% 72.04% at 50% 3.99%, #ff37eb 0%, rgba(0, 74, 173, 0) 100%);
   filter: blur(72px);
   border-radius: 24px;
   max-width: 480px;
@@ -112,8 +112,8 @@ const TitleText = styled.h1<{ isDarkMode: boolean }>`
   margin: 0 0 24px;
   background: ${({ isDarkMode }) =>
     isDarkMode
-      ? 'linear-gradient(20deg, rgba(255, 244, 207, 1) 10%, rgba(255, 87, 218, 1) 100%)'
-      : 'linear-gradient(10deg, rgba(255,79,184,1) 0%, rgba(255,159,251,1) 100%)'};
+      ? 'linear-gradient(20deg, rgba(130, 171, 224, 1) 10%, rgba(0, 75, 173, 1) 100%)'
+      : 'linear-gradient(10deg, rgba(130, 171, 224,1) 0%, rgba(0, 75, 173,1) 100%)'};
   background-clip: text;
   -webkit-background-clip: text;
 
@@ -154,13 +154,13 @@ const LandingButton = styled(BaseButton)`
 `
 
 const ButtonCTA = styled(LandingButton)`
-  background: linear-gradient(93.06deg, #ff00c7 2.66%, #ff9ffb 98.99%);
+  background: linear-gradient(93.06deg, #004aad 2.66%, #004aad 98.99%);
   border: none;
   color: ${({ theme }) => theme.white};
   transition: ${({ theme }) => `all ${theme.transition.duration.medium} ${theme.transition.timing.ease}`};
 
   &:hover {
-    box-shadow: 0px 0px 16px 0px #ff00c7;
+    box-shadow: 0px 0px 16px 0px #004aad;
   }
 `
 
@@ -215,8 +215,8 @@ const AboutContentContainer = styled.div<{ isDarkMode: boolean }>`
   width: 100%;
   background: ${({ isDarkMode }) =>
     isDarkMode
-      ? 'linear-gradient(179.82deg, rgba(0, 0, 0, 0) 0.16%, #050026 99.85%)'
-      : 'linear-gradient(179.82deg, rgba(255, 255, 255, 0) 0.16%, #eaeaea 99.85%)'};
+      ? 'linear-gradient(179.82deg, rgba(0, 0, 0, 0) 0.16%, #004aad 99.85%)'
+      : 'linear-gradient(179.82deg, rgba(255, 255, 255, 0) 0.16%, #004aad 99.85%)'};
   @media screen and (min-width: ${BREAKPOINTS.md}px) {
     padding: 0 96px 5rem;
   }
@@ -342,7 +342,7 @@ export default function Landing() {
             <Glow />
           </GlowContainer>
           <ContentContainer isDarkMode={isDarkMode}>
-            <TitleText isDarkMode={isDarkMode}>Trade crypto & NFTs with confidence</TitleText>
+            <TitleText isDarkMode={isDarkMode}>Trade crypto with confidence</TitleText>
             <SubTextContainer>
               <SubText>Buy, sell, and explore tokens and NFTs</SubText>
             </SubTextContainer>
