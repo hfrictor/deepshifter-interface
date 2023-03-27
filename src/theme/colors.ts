@@ -120,8 +120,8 @@ const commonTheme = {
   chain_42161_background: colors.blue900,
   chain_56_background: colors.networkBsc,
 
-  brandedGradient: 'linear-gradient(139.57deg, #FF79C9 4.35%, #FFB8E2 96.44%);',
-  promotionalGradient: 'radial-gradient(101.8% 4091.31% at 0% 0%, #4673FA 0%, #9646FA 100%);',
+  brandedGradient: 'linear-gradient(139.57deg, #FF79C9 4.35%, #004aad 96.44%);',
+  promotionalGradient: 'radial-gradient(101.8% 4091.31% at 0% 0%, #4673FA 0%, #004aad 100%);',
 
   hoverState: opacify(24, colors.blue200),
   hoverDefault: opacify(8, colors.gray300),
